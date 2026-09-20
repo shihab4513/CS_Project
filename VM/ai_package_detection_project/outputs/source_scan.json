@@ -1,0 +1,18 @@
+{
+  "scan_scope": "Read-only source inspection. No code, package script, or dependency was executed.",
+  "source_directory": "F:\\Computer Security\\Project run code\\VM\\ai_package_detection_project\\examples",
+  "files_seen": 1,
+  "text_files_scanned": 1,
+  "total_lines_scanned": 14,
+  "total_bytes_seen": 447,
+  "static_source_risk_score": 0.0,
+  "findings": [
+    {
+      "signal": "no_configured_signal",
+      "match_count": 0,
+      "files": [],
+      "explanation": "No configured high-risk static indicator was found."
+    }
+  ],
+  "limitation": "This lightweight scanner is not the paper's 140-feature extractor and its score must not be compared directly with the trained paper-dataset model probability."
+}

@@ -1,0 +1,4 @@
+package_name,ecosystem,static_probability,dynamic_probability,dynamic_analysis_seconds,ground_truth
+safe-demo-npm,NPM,0.12,0.08,4.7,0
+uncertain-demo-pypi,PyPI,0.51,,,0
+review-demo-npm,NPM,0.88,0.15,6.2,1

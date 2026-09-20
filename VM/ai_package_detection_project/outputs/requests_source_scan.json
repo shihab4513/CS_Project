@@ -1,0 +1,41 @@
+{
+  "scan_scope": "Read-only source inspection. No code, package script, or dependency was executed.",
+  "source_directory": "F:\\Computer Security\\Project run code\\VM\\trace_exports\\package_sources\\requests-2.32.3",
+  "files_seen": 84,
+  "text_files_scanned": 40,
+  "files_checked_for_risk_signals": 25,
+  "nonproduction_files_excluded_from_risk_scoring": 15,
+  "total_lines_scanned": 10889,
+  "total_bytes_seen": 476710,
+  "static_source_risk_score": 0.4,
+  "findings": [
+    {
+      "signal": "shell_execution",
+      "match_count": 2,
+      "files": [
+        "setup.py"
+      ],
+      "explanation": "Shell or child-process execution API found."
+    },
+    {
+      "signal": "network_access",
+      "match_count": 127,
+      "files": [
+        "setup.py",
+        "src\\requests\\adapters.py",
+        "src\\requests\\api.py"
+      ],
+      "explanation": "Network access indicator found."
+    },
+    {
+      "signal": "sensitive_access",
+      "match_count": 11,
+      "files": [
+        "src\\requests\\sessions.py",
+        "src\\requests\\utils.py"
+      ],
+      "explanation": "Potential access to a credential or sensitive file found."
+    }
+  ],
+  "limitation": "This lightweight scanner is not the paper's 140-feature extractor and its score must not be compared directly with the trained paper-dataset model probability."
+}

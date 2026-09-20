@@ -1,0 +1,13 @@
+{
+  "package_name": "offline-demo-package",
+  "ecosystem": "NPM",
+  "collection_note": "Synthetic example for testing the importer. It was not produced by running a package.",
+  "observed": {
+    "install_hooks": ["postinstall"],
+    "processes": ["node postinstall.js"],
+    "commands": ["node postinstall.js"],
+    "files_read": ["/workspace/package.json"],
+    "files_written": ["/tmp/package-build-cache"],
+    "network_connections": []
+  }
+}

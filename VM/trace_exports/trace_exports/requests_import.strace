@@ -1,0 +1,1210 @@
+3001  execve("/home/shihab/package-lab/venv/bin/python", ["python", "-c", "import requests; print(requests.__version__)"], 0x7fffd18a0630 /* 62 vars */) = 0
+3001  access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+3001  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+3001  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+3001  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libz.so.1", O_RDONLY|O_CLOEXEC) = 3
+3001  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libexpat.so.1", O_RDONLY|O_CLOEXEC) = 3
+3001  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+3001  openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+3001  openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/bin/python", {st_mode=S_IFREG|0755, st_size=8020928, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/pyvenv.cfg", O_RDONLY) = 3
+3001  readlink("/home/shihab/package-lab/venv/bin/python", "python3", 4096) = 7
+3001  readlink("/home/shihab/package-lab/venv/bin/python3", "/usr/bin/python3", 4096) = 16
+3001  readlink("/usr/bin/python3", "python3.12", 4096) = 10
+3001  readlink("/usr/bin/python3.12", 0x7fffa46c6830, 4096) = -1 EINVAL (Invalid argument)
+3001  readlink("/usr/bin/python3.12", 0x7fffa46c6830, 4096) = -1 EINVAL (Invalid argument)
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/bin/python._pth", O_RDONLY) = -1 ENOENT (No such file or directory)
+3001  openat(AT_FDCWD, "/usr/bin/python3.12._pth", O_RDONLY) = -1 ENOENT (No such file or directory)
+3001  openat(AT_FDCWD, "/usr/bin/pybuilddir.txt", O_RDONLY) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/usr/bin/Modules/Setup.local", 0x7fffa46cb810, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/usr/bin/lib/python312.zip", 0x7fffa46cb5d0, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/usr/lib/python312.zip", 0x7fffa46cb630, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/usr/bin/lib/python3.12/os.py", 0x7fffa46cb630, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/usr/bin/lib/python3.12/os.pyc", 0x7fffa46cb630, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/os.py", {st_mode=S_IFREG|0644, st_size=39786, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/bin/lib/python3.12/lib-dynload", 0x7fffa46cb630, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=16384, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=16384, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/etc/localtime", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python312.zip", 0x7fffa46cb060, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python312.zip", 0x7fffa46cb3e0, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/encodings/__init__.cpython-312-x86_64-linux-gnu.so", 0x7fffa46cb3e0, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/encodings/__init__.abi3.so", 0x7fffa46cb3e0, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/encodings/__init__.so", 0x7fffa46cb3e0, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/encodings/__init__.py", {st_mode=S_IFREG|0644, st_size=5884, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/encodings/__init__.py", {st_mode=S_IFREG|0644, st_size=5884, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/encodings/__pycache__/__init__.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/encodings", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/encodings", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/encodings", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/encodings", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/encodings/aliases.py", {st_mode=S_IFREG|0644, st_size=15677, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/encodings/aliases.py", {st_mode=S_IFREG|0644, st_size=15677, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/encodings/__pycache__/aliases.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/encodings", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/encodings/utf_8.py", {st_mode=S_IFREG|0644, st_size=1005, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/encodings/utf_8.py", {st_mode=S_IFREG|0644, st_size=1005, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/encodings/__pycache__/utf_8.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/bin/pyvenv.cfg", 0x7fffa46cb020, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/pyvenv.cfg", {st_mode=S_IFREG|0664, st_size=168, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/pyvenv.cfg", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/local/lib/python3.12/dist-packages", 0x7fffa46cb2b0, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3/dist-packages", 0x7fffa46cb2b0, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/dist-packages", 0x7fffa46cb2b0, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/local/lib/python3.12/dist-packages", 0x7fffa46cb2b0, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3/dist-packages", 0x7fffa46cb2b0, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/dist-packages", 0x7fffa46cb2b0, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/sitecustomize.py", {st_mode=S_IFREG|0644, st_size=155, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/sitecustomize.py", {st_mode=S_IFREG|0644, st_size=155, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/sitecustomize.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=16384, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=16384, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=16384, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=16384, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests/__init__.cpython-312-x86_64-linux-gnu.so", 0x7fffa46cb820, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests/__init__.abi3.so", 0x7fffa46cb820, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests/__init__.so", 0x7fffa46cb820, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests/__init__.py", {st_mode=S_IFREG|0664, st_size=5072, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests/__init__.py", {st_mode=S_IFREG|0664, st_size=5072, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests/__pycache__/__init__.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/warnings.py", {st_mode=S_IFREG|0644, st_size=21760, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/warnings.py", {st_mode=S_IFREG|0644, st_size=21760, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/warnings.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=16384, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/__init__.cpython-312-x86_64-linux-gnu.so", 0x7fffa46cb1b0, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/__init__.abi3.so", 0x7fffa46cb1b0, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/__init__.so", 0x7fffa46cb1b0, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/__init__.py", {st_mode=S_IFREG|0664, st_size=6979, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/__init__.py", {st_mode=S_IFREG|0664, st_size=6979, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/__pycache__/__init__.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/__future__.py", {st_mode=S_IFREG|0644, st_size=5218, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/__future__.py", {st_mode=S_IFREG|0644, st_size=5218, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/__future__.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/logging/__init__.cpython-312-x86_64-linux-gnu.so", 0x7fffa46cab40, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/logging/__init__.abi3.so", 0x7fffa46cab40, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/logging/__init__.so", 0x7fffa46cab40, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/logging/__init__.py", {st_mode=S_IFREG|0644, st_size=83437, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/logging/__init__.py", {st_mode=S_IFREG|0644, st_size=83437, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/logging/__pycache__/__init__.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/re/__init__.cpython-312-x86_64-linux-gnu.so", 0x7fffa46ca4d0, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/re/__init__.abi3.so", 0x7fffa46ca4d0, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/re/__init__.so", 0x7fffa46ca4d0, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/re/__init__.py", {st_mode=S_IFREG|0644, st_size=16315, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/re/__init__.py", {st_mode=S_IFREG|0644, st_size=16315, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/re/__pycache__/__init__.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/enum.py", {st_mode=S_IFREG|0644, st_size=81636, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/enum.py", {st_mode=S_IFREG|0644, st_size=81636, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/enum.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/types.py", {st_mode=S_IFREG|0644, st_size=10993, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/types.py", {st_mode=S_IFREG|0644, st_size=10993, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/types.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/operator.py", {st_mode=S_IFREG|0644, st_size=10965, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/operator.py", {st_mode=S_IFREG|0644, st_size=10965, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/operator.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/functools.py", {st_mode=S_IFREG|0644, st_size=38126, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/functools.py", {st_mode=S_IFREG|0644, st_size=38126, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/functools.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/collections/__init__.cpython-312-x86_64-linux-gnu.so", 0x7fffa46c9180, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/collections/__init__.abi3.so", 0x7fffa46c9180, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/collections/__init__.so", 0x7fffa46c9180, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/collections/__init__.py", {st_mode=S_IFREG|0644, st_size=52378, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/collections/__init__.py", {st_mode=S_IFREG|0644, st_size=52378, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/collections/__pycache__/__init__.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/keyword.py", {st_mode=S_IFREG|0644, st_size=1073, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/keyword.py", {st_mode=S_IFREG|0644, st_size=1073, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/keyword.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/reprlib.py", {st_mode=S_IFREG|0644, st_size=6569, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/reprlib.py", {st_mode=S_IFREG|0644, st_size=6569, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/reprlib.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/re", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/re", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/re", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/re", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/re/_compiler.py", {st_mode=S_IFREG|0644, st_size=26089, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/re/_compiler.py", {st_mode=S_IFREG|0644, st_size=26089, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/re/__pycache__/_compiler.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/re", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/re/_parser.py", {st_mode=S_IFREG|0644, st_size=41201, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/re/_parser.py", {st_mode=S_IFREG|0644, st_size=41201, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/re/__pycache__/_parser.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/re", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/re/_constants.py", {st_mode=S_IFREG|0644, st_size=5930, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/re/_constants.py", {st_mode=S_IFREG|0644, st_size=5930, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/re/__pycache__/_constants.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/re", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/re/_casefix.py", {st_mode=S_IFREG|0644, st_size=5446, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/re/_casefix.py", {st_mode=S_IFREG|0644, st_size=5446, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/re/__pycache__/_casefix.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/copyreg.py", {st_mode=S_IFREG|0644, st_size=7614, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/copyreg.py", {st_mode=S_IFREG|0644, st_size=7614, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/copyreg.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/traceback.py", {st_mode=S_IFREG|0644, st_size=46325, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/traceback.py", {st_mode=S_IFREG|0644, st_size=46325, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/traceback.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/collections", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/collections", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/collections", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/collections", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/collections/abc.py", {st_mode=S_IFREG|0644, st_size=119, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/collections/abc.py", {st_mode=S_IFREG|0644, st_size=119, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/collections/__pycache__/abc.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/linecache.py", {st_mode=S_IFREG|0644, st_size=5649, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/linecache.py", {st_mode=S_IFREG|0644, st_size=5649, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/linecache.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/tokenize.py", {st_mode=S_IFREG|0644, st_size=21214, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/tokenize.py", {st_mode=S_IFREG|0644, st_size=21214, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/tokenize.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/token.py", {st_mode=S_IFREG|0644, st_size=2479, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/token.py", {st_mode=S_IFREG|0644, st_size=2479, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/token.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/textwrap.py", {st_mode=S_IFREG|0644, st_size=19718, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/textwrap.py", {st_mode=S_IFREG|0644, st_size=19718, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/textwrap.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/contextlib.py", {st_mode=S_IFREG|0644, st_size=27637, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/contextlib.py", {st_mode=S_IFREG|0644, st_size=27637, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/contextlib.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/weakref.py", {st_mode=S_IFREG|0644, st_size=21513, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/weakref.py", {st_mode=S_IFREG|0644, st_size=21513, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/weakref.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/_weakrefset.py", {st_mode=S_IFREG|0644, st_size=5893, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/_weakrefset.py", {st_mode=S_IFREG|0644, st_size=5893, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/_weakrefset.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/string.py", {st_mode=S_IFREG|0644, st_size=11786, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/string.py", {st_mode=S_IFREG|0644, st_size=11786, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/string.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/threading.py", {st_mode=S_IFREG|0644, st_size=60123, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/threading.py", {st_mode=S_IFREG|0644, st_size=60123, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/threading.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/typing.py", {st_mode=S_IFREG|0644, st_size=117428, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/typing.py", {st_mode=S_IFREG|0644, st_size=117428, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/typing.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/exceptions.py", {st_mode=S_IFREG|0664, st_size=9945, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/exceptions.py", {st_mode=S_IFREG|0664, st_size=9945, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/__pycache__/exceptions.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/socket.py", {st_mode=S_IFREG|0644, st_size=37411, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/socket.py", {st_mode=S_IFREG|0644, st_size=37411, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/socket.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/selectors.py", {st_mode=S_IFREG|0644, st_size=19671, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/selectors.py", {st_mode=S_IFREG|0644, st_size=19671, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/selectors.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/email/__init__.cpython-312-x86_64-linux-gnu.so", 0x7fffa46c9bf0, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/email/__init__.abi3.so", 0x7fffa46c9bf0, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/email/__init__.so", 0x7fffa46c9bf0, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/email/__init__.py", {st_mode=S_IFREG|0644, st_size=1764, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/email/__init__.py", {st_mode=S_IFREG|0644, st_size=1764, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/email/__pycache__/__init__.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/email", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/email", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/email", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/email", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/email/errors.py", {st_mode=S_IFREG|0644, st_size=3814, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/email/errors.py", {st_mode=S_IFREG|0644, st_size=3814, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/email/__pycache__/errors.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/http/__init__.cpython-312-x86_64-linux-gnu.so", 0x7fffa46c9bf0, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/http/__init__.abi3.so", 0x7fffa46c9bf0, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/http/__init__.so", 0x7fffa46c9bf0, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/http/__init__.py", {st_mode=S_IFREG|0644, st_size=8308, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/http/__init__.py", {st_mode=S_IFREG|0644, st_size=8308, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/http/__pycache__/__init__.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/http", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/http", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/http", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/http", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/http/client.py", {st_mode=S_IFREG|0644, st_size=58537, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/http/client.py", {st_mode=S_IFREG|0644, st_size=58537, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/http/__pycache__/client.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/email", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/email/parser.py", {st_mode=S_IFREG|0644, st_size=4975, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/email/parser.py", {st_mode=S_IFREG|0644, st_size=4975, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/email/__pycache__/parser.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/email", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/email/feedparser.py", {st_mode=S_IFREG|0644, st_size=22796, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/email/feedparser.py", {st_mode=S_IFREG|0644, st_size=22796, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/email/__pycache__/feedparser.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/email", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/email/_policybase.py", {st_mode=S_IFREG|0644, st_size=15534, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/email/_policybase.py", {st_mode=S_IFREG|0644, st_size=15534, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/email/__pycache__/_policybase.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/email", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/email/header.py", {st_mode=S_IFREG|0644, st_size=24092, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/email/header.py", {st_mode=S_IFREG|0644, st_size=24092, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/email/__pycache__/header.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/email", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/email/quoprimime.py", {st_mode=S_IFREG|0644, st_size=9864, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/email/quoprimime.py", {st_mode=S_IFREG|0644, st_size=9864, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/email/__pycache__/quoprimime.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/email", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/email/base64mime.py", {st_mode=S_IFREG|0644, st_size=3551, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/email/base64mime.py", {st_mode=S_IFREG|0644, st_size=3551, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/email/__pycache__/base64mime.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/base64.py", {st_mode=S_IFREG|0755, st_size=20602, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/base64.py", {st_mode=S_IFREG|0755, st_size=20602, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/base64.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/struct.py", {st_mode=S_IFREG|0644, st_size=257, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/struct.py", {st_mode=S_IFREG|0644, st_size=257, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/struct.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/email", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/email/charset.py", {st_mode=S_IFREG|0644, st_size=17063, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/email/charset.py", {st_mode=S_IFREG|0644, st_size=17063, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/email/__pycache__/charset.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/email", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/email/encoders.py", {st_mode=S_IFREG|0644, st_size=1778, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/email/encoders.py", {st_mode=S_IFREG|0644, st_size=1778, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/email/__pycache__/encoders.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/quopri.py", {st_mode=S_IFREG|0755, st_size=7183, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/quopri.py", {st_mode=S_IFREG|0755, st_size=7183, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/quopri.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/email", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/email/utils.py", {st_mode=S_IFREG|0644, st_size=16071, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/email/utils.py", {st_mode=S_IFREG|0644, st_size=16071, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/email/__pycache__/utils.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/random.py", {st_mode=S_IFREG|0644, st_size=34683, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/random.py", {st_mode=S_IFREG|0644, st_size=34683, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/random.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/bisect.py", {st_mode=S_IFREG|0644, st_size=3423, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/bisect.py", {st_mode=S_IFREG|0644, st_size=3423, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/bisect.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/datetime.py", {st_mode=S_IFREG|0644, st_size=268, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/datetime.py", {st_mode=S_IFREG|0644, st_size=268, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/datetime.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/urllib/__init__.cpython-312-x86_64-linux-gnu.so", 0x7fffa46c7bc0, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/urllib/__init__.abi3.so", 0x7fffa46c7bc0, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/urllib/__init__.so", 0x7fffa46c7bc0, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/urllib/__init__.py", {st_mode=S_IFREG|0644, st_size=0, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/urllib/__init__.py", {st_mode=S_IFREG|0644, st_size=0, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/urllib/__pycache__/__init__.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/urllib", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/urllib", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/urllib", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/urllib", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/urllib/parse.py", {st_mode=S_IFREG|0644, st_size=45591, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/urllib/parse.py", {st_mode=S_IFREG|0644, st_size=45591, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/urllib/__pycache__/parse.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/ipaddress.py", {st_mode=S_IFREG|0644, st_size=78294, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/ipaddress.py", {st_mode=S_IFREG|0644, st_size=78294, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/ipaddress.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/email", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/email/_parseaddr.py", {st_mode=S_IFREG|0644, st_size=17821, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/email/_parseaddr.py", {st_mode=S_IFREG|0644, st_size=17821, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/email/__pycache__/_parseaddr.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/calendar.py", {st_mode=S_IFREG|0644, st_size=25418, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/calendar.py", {st_mode=S_IFREG|0644, st_size=25418, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/calendar.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/locale.py", {st_mode=S_IFREG|0644, st_size=78562, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/locale.py", {st_mode=S_IFREG|0644, st_size=78562, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/locale.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/email", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/email/message.py", {st_mode=S_IFREG|0644, st_size=48110, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/email/message.py", {st_mode=S_IFREG|0644, st_size=48110, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/email/__pycache__/message.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/email", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/email/_encoded_words.py", {st_mode=S_IFREG|0644, st_size=8541, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/email/_encoded_words.py", {st_mode=S_IFREG|0644, st_size=8541, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/email/__pycache__/_encoded_words.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/email", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/email/iterators.py", {st_mode=S_IFREG|0644, st_size=2129, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/email/iterators.py", {st_mode=S_IFREG|0644, st_size=2129, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/email/__pycache__/iterators.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/ssl.py", {st_mode=S_IFREG|0644, st_size=50822, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/ssl.py", {st_mode=S_IFREG|0644, st_size=50822, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/ssl.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=16384, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload/_ssl.cpython-312-x86_64-linux-gnu.so", {st_mode=S_IFREG|0644, st_size=221360, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload/_ssl.cpython-312-x86_64-linux-gnu.so", O_RDONLY|O_CLOEXEC) = 3
+3001  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+3001  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libssl.so.3", O_RDONLY|O_CLOEXEC) = 3
+3001  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcrypto.so.3", O_RDONLY|O_CLOEXEC) = 3
+3001  openat(AT_FDCWD, "/proc/sys/crypto/fips_enabled", O_RDONLY) = -1 ENOENT (No such file or directory)
+3001  openat(AT_FDCWD, "/usr/lib/ssl/openssl.cnf", O_RDONLY) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/_base_connection.py", {st_mode=S_IFREG|0664, st_size=5580, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/_base_connection.py", {st_mode=S_IFREG|0664, st_size=5580, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/__pycache__/_base_connection.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/util/__init__.cpython-312-x86_64-linux-gnu.so", 0x7fffa46ca060, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/util/__init__.abi3.so", 0x7fffa46ca060, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/util/__init__.so", 0x7fffa46ca060, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/util/__init__.py", {st_mode=S_IFREG|0664, st_size=1001, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/util/__init__.py", {st_mode=S_IFREG|0664, st_size=1001, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/util/__pycache__/__init__.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/util", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/util", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/util", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/util", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/util/connection.py", {st_mode=S_IFREG|0664, st_size=4444, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/util/connection.py", {st_mode=S_IFREG|0664, st_size=4444, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/util/__pycache__/connection.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/util", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/util/timeout.py", {st_mode=S_IFREG|0664, st_size=10346, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/util/timeout.py", {st_mode=S_IFREG|0664, st_size=10346, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/util/__pycache__/timeout.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  socket(AF_INET6, SOCK_STREAM|SOCK_CLOEXEC, IPPROTO_IP) = 3
+3001  bind(3, {sa_family=AF_INET6, sin6_port=htons(0), sin6_flowinfo=htonl(0), inet_pton(AF_INET6, "::1", &sin6_addr), sin6_scope_id=0}, 28) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/util", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/util/request.py", {st_mode=S_IFREG|0664, st_size=10228, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/util/request.py", {st_mode=S_IFREG|0664, st_size=10228, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/util/__pycache__/request.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/util", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/util/util.py", {st_mode=S_IFREG|0664, st_size=1146, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/util/util.py", {st_mode=S_IFREG|0664, st_size=1146, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/util/__pycache__/util.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=16384, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=16384, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=16384, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/util", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/util/response.py", {st_mode=S_IFREG|0664, st_size=3374, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/util/response.py", {st_mode=S_IFREG|0664, st_size=3374, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/util/__pycache__/response.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/util", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/util/retry.py", {st_mode=S_IFREG|0664, st_size=20151, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/util/retry.py", {st_mode=S_IFREG|0664, st_size=20151, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/util/__pycache__/retry.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/util", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/util/ssl_.py", {st_mode=S_IFREG|0664, st_size=17856, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/util/ssl_.py", {st_mode=S_IFREG|0664, st_size=17856, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/util/__pycache__/ssl_.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/hashlib.py", {st_mode=S_IFREG|0644, st_size=9349, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/hashlib.py", {st_mode=S_IFREG|0644, st_size=9349, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/hashlib.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=16384, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload/_hashlib.cpython-312-x86_64-linux-gnu.so", {st_mode=S_IFREG|0644, st_size=64368, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload/_hashlib.cpython-312-x86_64-linux-gnu.so", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/hmac.py", {st_mode=S_IFREG|0644, st_size=7716, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/hmac.py", {st_mode=S_IFREG|0644, st_size=7716, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/hmac.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/util", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/util/url.py", {st_mode=S_IFREG|0664, st_size=19579, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/util/url.py", {st_mode=S_IFREG|0664, st_size=19579, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/util/__pycache__/url.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/util", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/util/ssltransport.py", {st_mode=S_IFREG|0664, st_size=8847, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/util/ssltransport.py", {st_mode=S_IFREG|0664, st_size=8847, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/util/__pycache__/ssltransport.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/util", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/util/wait.py", {st_mode=S_IFREG|0664, st_size=4423, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/util/wait.py", {st_mode=S_IFREG|0664, st_size=4423, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/util/__pycache__/wait.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/_collections.py", {st_mode=S_IFREG|0664, st_size=17669, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/_collections.py", {st_mode=S_IFREG|0664, st_size=17669, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/__pycache__/_collections.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/_version.py", {st_mode=S_IFREG|0664, st_size=520, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/_version.py", {st_mode=S_IFREG|0664, st_size=520, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/__pycache__/_version.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", {st_mode=S_IFREG|0664, st_size=45250, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", {st_mode=S_IFREG|0664, st_size=45250, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/__pycache__/connectionpool.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/queue.py", {st_mode=S_IFREG|0644, st_size=11496, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/queue.py", {st_mode=S_IFREG|0644, st_size=11496, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/queue.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/heapq.py", {st_mode=S_IFREG|0644, st_size=23024, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/heapq.py", {st_mode=S_IFREG|0644, st_size=23024, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/heapq.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=16384, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload/_queue.cpython-312-x86_64-linux-gnu.so", {st_mode=S_IFREG|0644, st_size=23816, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload/_queue.cpython-312-x86_64-linux-gnu.so", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/_request_methods.py", {st_mode=S_IFREG|0664, st_size=9931, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/_request_methods.py", {st_mode=S_IFREG|0664, st_size=9931, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/__pycache__/_request_methods.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/json/__init__.cpython-312-x86_64-linux-gnu.so", 0x7fffa46c9e60, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/json/__init__.abi3.so", 0x7fffa46c9e60, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/json/__init__.so", 0x7fffa46c9e60, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/json/__init__.py", {st_mode=S_IFREG|0644, st_size=14020, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/json/__init__.py", {st_mode=S_IFREG|0644, st_size=14020, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/json/__pycache__/__init__.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/json", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/json", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/json", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/json", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/json/decoder.py", {st_mode=S_IFREG|0644, st_size=12473, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/json/decoder.py", {st_mode=S_IFREG|0644, st_size=12473, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/json/__pycache__/decoder.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/json", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/json/scanner.py", {st_mode=S_IFREG|0644, st_size=2425, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/json/scanner.py", {st_mode=S_IFREG|0644, st_size=2425, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/json/__pycache__/scanner.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=16384, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload/_json.cpython-312-x86_64-linux-gnu.so", {st_mode=S_IFREG|0644, st_size=48952, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload/_json.cpython-312-x86_64-linux-gnu.so", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/json", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/json/encoder.py", {st_mode=S_IFREG|0644, st_size=16070, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/json/encoder.py", {st_mode=S_IFREG|0644, st_size=16070, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/json/__pycache__/encoder.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/filepost.py", {st_mode=S_IFREG|0664, st_size=2388, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/filepost.py", {st_mode=S_IFREG|0664, st_size=2388, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/__pycache__/filepost.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/fields.py", {st_mode=S_IFREG|0664, st_size=10801, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/fields.py", {st_mode=S_IFREG|0664, st_size=10801, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/__pycache__/fields.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/mimetypes.py", {st_mode=S_IFREG|0644, st_size=22888, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/mimetypes.py", {st_mode=S_IFREG|0644, st_size=22888, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/mimetypes.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=16384, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=16384, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/response.py", {st_mode=S_IFREG|0664, st_size=54628, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/response.py", {st_mode=S_IFREG|0664, st_size=54628, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/__pycache__/response.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=16384, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=16384, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/connection.py", {st_mode=S_IFREG|0664, st_size=47903, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/connection.py", {st_mode=S_IFREG|0664, st_size=47903, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/__pycache__/connection.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/http2/__init__.cpython-312-x86_64-linux-gnu.so", 0x7fffa46c9180, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/http2/__init__.abi3.so", 0x7fffa46c9180, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/http2/__init__.so", 0x7fffa46c9180, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/http2/__init__.py", {st_mode=S_IFREG|0664, st_size=1741, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/http2/__init__.py", {st_mode=S_IFREG|0664, st_size=1741, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/http2/__pycache__/__init__.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/__init__.cpython-312-x86_64-linux-gnu.so", 0x7fffa46c86a0, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/__init__.abi3.so", 0x7fffa46c86a0, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/__init__.so", 0x7fffa46c86a0, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/__init__.py", {st_mode=S_IFREG|0644, st_size=4774, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/__init__.py", {st_mode=S_IFREG|0644, st_size=4774, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/importlib/__pycache__/__init__.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/importlib", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/metadata/__init__.cpython-312-x86_64-linux-gnu.so", 0x7fffa46c8b10, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/metadata/__init__.abi3.so", 0x7fffa46c8b10, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/metadata/__init__.so", 0x7fffa46c8b10, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/metadata/__init__.py", {st_mode=S_IFREG|0644, st_size=28743, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/metadata/__init__.py", {st_mode=S_IFREG|0644, st_size=28743, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/importlib/metadata/__pycache__/__init__.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/csv.py", {st_mode=S_IFREG|0644, st_size=16386, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/csv.py", {st_mode=S_IFREG|0644, st_size=16386, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/csv.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/pathlib.py", {st_mode=S_IFREG|0644, st_size=51153, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/pathlib.py", {st_mode=S_IFREG|0644, st_size=51153, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/pathlib.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/fnmatch.py", {st_mode=S_IFREG|0644, st_size=5999, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/fnmatch.py", {st_mode=S_IFREG|0644, st_size=5999, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/fnmatch.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=16384, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=16384, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=16384, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=16384, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=16384, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=16384, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=16384, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/zipfile/__init__.cpython-312-x86_64-linux-gnu.so", 0x7fffa46c84a0, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/zipfile/__init__.abi3.so", 0x7fffa46c84a0, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/zipfile/__init__.so", 0x7fffa46c84a0, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/zipfile/__init__.py", {st_mode=S_IFREG|0644, st_size=88365, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/zipfile/__init__.py", {st_mode=S_IFREG|0644, st_size=88365, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/zipfile/__pycache__/__init__.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/_abc.py", {st_mode=S_IFREG|0644, st_size=1354, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/_abc.py", {st_mode=S_IFREG|0644, st_size=1354, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/importlib/__pycache__/_abc.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/shutil.py", {st_mode=S_IFREG|0644, st_size=58120, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/shutil.py", {st_mode=S_IFREG|0644, st_size=58120, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/shutil.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/bz2.py", {st_mode=S_IFREG|0644, st_size=11847, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/bz2.py", {st_mode=S_IFREG|0644, st_size=11847, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/bz2.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/_compression.py", {st_mode=S_IFREG|0644, st_size=5681, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/_compression.py", {st_mode=S_IFREG|0644, st_size=5681, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/_compression.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=16384, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload/_bz2.cpython-312-x86_64-linux-gnu.so", {st_mode=S_IFREG|0644, st_size=32112, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload/_bz2.cpython-312-x86_64-linux-gnu.so", O_RDONLY|O_CLOEXEC) = 3
+3001  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+3001  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libbz2.so.1.0", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/lzma.py", {st_mode=S_IFREG|0644, st_size=13277, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/lzma.py", {st_mode=S_IFREG|0644, st_size=13277, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/lzma.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=16384, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload/_lzma.cpython-312-x86_64-linux-gnu.so", {st_mode=S_IFREG|0644, st_size=49256, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload/_lzma.cpython-312-x86_64-linux-gnu.so", O_RDONLY|O_CLOEXEC) = 3
+3001  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+3001  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/liblzma.so.5", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/zipfile", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/zipfile", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/zipfile", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/zipfile", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/zipfile/_path/__init__.cpython-312-x86_64-linux-gnu.so", 0x7fffa46c7e30, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/zipfile/_path/__init__.abi3.so", 0x7fffa46c7e30, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/zipfile/_path/__init__.so", 0x7fffa46c7e30, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/zipfile/_path/__init__.py", {st_mode=S_IFREG|0644, st_size=10753, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/zipfile/_path/__init__.py", {st_mode=S_IFREG|0644, st_size=10753, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/zipfile/_path/__pycache__/__init__.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/zipfile/_path", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/zipfile/_path", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/zipfile/_path", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/zipfile/_path", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/zipfile/_path/glob.py", {st_mode=S_IFREG|0644, st_size=893, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/zipfile/_path/glob.py", {st_mode=S_IFREG|0644, st_size=893, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/zipfile/_path/__pycache__/glob.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/inspect.py", {st_mode=S_IFREG|0644, st_size=125420, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/inspect.py", {st_mode=S_IFREG|0644, st_size=125420, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/inspect.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/ast.py", {st_mode=S_IFREG|0644, st_size=64260, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/ast.py", {st_mode=S_IFREG|0644, st_size=64260, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/ast.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/dis.py", {st_mode=S_IFREG|0644, st_size=30209, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/dis.py", {st_mode=S_IFREG|0644, st_size=30209, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/dis.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/opcode.py", {st_mode=S_IFREG|0644, st_size=13174, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/opcode.py", {st_mode=S_IFREG|0644, st_size=13174, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/opcode.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/metadata", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/metadata", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/metadata", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/importlib/metadata", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/metadata/_adapters.py", {st_mode=S_IFREG|0644, st_size=2406, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/metadata/_adapters.py", {st_mode=S_IFREG|0644, st_size=2406, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/importlib/metadata/__pycache__/_adapters.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/metadata", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/metadata/_text.py", {st_mode=S_IFREG|0644, st_size=2166, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/metadata/_text.py", {st_mode=S_IFREG|0644, st_size=2166, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/importlib/metadata/__pycache__/_text.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/metadata", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/metadata/_functools.py", {st_mode=S_IFREG|0644, st_size=2895, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/metadata/_functools.py", {st_mode=S_IFREG|0644, st_size=2895, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/importlib/metadata/__pycache__/_functools.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/metadata", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/metadata/_meta.py", {st_mode=S_IFREG|0644, st_size=1590, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/metadata/_meta.py", {st_mode=S_IFREG|0644, st_size=1590, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/importlib/metadata/__pycache__/_meta.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/metadata", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/metadata/_collections.py", {st_mode=S_IFREG|0644, st_size=743, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/metadata/_collections.py", {st_mode=S_IFREG|0644, st_size=743, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/importlib/metadata/__pycache__/_collections.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/metadata", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/metadata/_itertools.py", {st_mode=S_IFREG|0644, st_size=2068, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/metadata/_itertools.py", {st_mode=S_IFREG|0644, st_size=2068, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/importlib/metadata/__pycache__/_itertools.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/abc.py", {st_mode=S_IFREG|0644, st_size=7612, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/abc.py", {st_mode=S_IFREG|0644, st_size=7612, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/importlib/__pycache__/abc.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/resources/__init__.cpython-312-x86_64-linux-gnu.so", 0x7fffa46c7e30, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/resources/__init__.abi3.so", 0x7fffa46c7e30, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/resources/__init__.so", 0x7fffa46c7e30, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/resources/__init__.py", {st_mode=S_IFREG|0644, st_size=506, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/resources/__init__.py", {st_mode=S_IFREG|0644, st_size=506, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/importlib/resources/__pycache__/__init__.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/resources", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/resources", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/resources", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/importlib/resources", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/resources/_common.py", {st_mode=S_IFREG|0644, st_size=5459, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/resources/_common.py", {st_mode=S_IFREG|0644, st_size=5459, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/importlib/resources/__pycache__/_common.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/tempfile.py", {st_mode=S_IFREG|0644, st_size=37334, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/tempfile.py", {st_mode=S_IFREG|0644, st_size=37334, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/tempfile.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/resources", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/resources/abc.py", {st_mode=S_IFREG|0644, st_size=5203, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/resources/abc.py", {st_mode=S_IFREG|0644, st_size=5203, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/importlib/resources/__pycache__/abc.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/resources", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/resources/_adapters.py", {st_mode=S_IFREG|0644, st_size=4482, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/resources/_adapters.py", {st_mode=S_IFREG|0644, st_size=4482, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/importlib/resources/__pycache__/_adapters.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/resources", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/resources/_legacy.py", {st_mode=S_IFREG|0644, st_size=3481, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/resources/_legacy.py", {st_mode=S_IFREG|0644, st_size=3481, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/importlib/resources/__pycache__/_legacy.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/http2", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/http2", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/http2", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/http2", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/http2/probe.py", {st_mode=S_IFREG|0664, st_size=3014, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/http2/probe.py", {st_mode=S_IFREG|0664, st_size=3014, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/http2/__pycache__/probe.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/util", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/util/ssl_match_hostname.py", {st_mode=S_IFREG|0664, st_size=5479, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/util/ssl_match_hostname.py", {st_mode=S_IFREG|0664, st_size=5479, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/util/__pycache__/ssl_match_hostname.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=16384, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/util", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/util/proxy.py", {st_mode=S_IFREG|0664, st_size=1148, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/util/proxy.py", {st_mode=S_IFREG|0664, st_size=1148, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/util/__pycache__/proxy.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/poolmanager.py", {st_mode=S_IFREG|0664, st_size=25026, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/poolmanager.py", {st_mode=S_IFREG|0664, st_size=25026, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/__pycache__/poolmanager.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests/exceptions.py", {st_mode=S_IFREG|0664, st_size=4260, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests/exceptions.py", {st_mode=S_IFREG|0664, st_size=4260, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests/__pycache__/exceptions.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests/compat.py", {st_mode=S_IFREG|0664, st_size=1817, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests/compat.py", {st_mode=S_IFREG|0664, st_size=1817, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests/__pycache__/compat.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=16384, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=16384, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/charset_normalizer/__init__.cpython-312-x86_64-linux-gnu.so", 0x7fffa46ca890, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/charset_normalizer/__init__.abi3.so", 0x7fffa46ca890, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/charset_normalizer/__init__.so", 0x7fffa46ca890, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/charset_normalizer/__init__.py", {st_mode=S_IFREG|0664, st_size=1582, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/charset_normalizer/__init__.py", {st_mode=S_IFREG|0664, st_size=1582, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/charset_normalizer/__pycache__/__init__.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/charset_normalizer", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/charset_normalizer", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/charset_normalizer", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/charset_normalizer", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/charset_normalizer/api.py", {st_mode=S_IFREG|0664, st_size=35774, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/charset_normalizer/api.py", {st_mode=S_IFREG|0664, st_size=35774, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/charset_normalizer/__pycache__/api.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/charset_normalizer", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/charset_normalizer/cd.cpython-312-x86_64-linux-gnu.so", {st_mode=S_IFREG|0775, st_size=169424, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/charset_normalizer/cd.cpython-312-x86_64-linux-gnu.so", O_RDONLY|O_CLOEXEC) = 3
+3001  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+3001  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/charset_normalizer", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/charset_normalizer/md.cpython-312-x86_64-linux-gnu.so", {st_mode=S_IFREG|0775, st_size=313840, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/charset_normalizer/md.cpython-312-x86_64-linux-gnu.so", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/charset_normalizer", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/charset_normalizer/constant.py", {st_mode=S_IFREG|0664, st_size=60749, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/charset_normalizer/constant.py", {st_mode=S_IFREG|0664, st_size=60749, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/charset_normalizer/__pycache__/constant.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/charset_normalizer", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/charset_normalizer/utils.py", {st_mode=S_IFREG|0664, st_size=14122, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/charset_normalizer/utils.py", {st_mode=S_IFREG|0664, st_size=14122, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/charset_normalizer/__pycache__/utils.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/charset_normalizer", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/charset_normalizer/models.py", {st_mode=S_IFREG|0664, st_size=13530, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/charset_normalizer/models.py", {st_mode=S_IFREG|0664, st_size=13530, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/charset_normalizer/__pycache__/models.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=16384, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload/_codecs_kr.cpython-312-x86_64-linux-gnu.so", {st_mode=S_IFREG|0644, st_size=141896, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload/_codecs_kr.cpython-312-x86_64-linux-gnu.so", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=16384, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload/_codecs_iso2022.cpython-312-x86_64-linux-gnu.so", {st_mode=S_IFREG|0644, st_size=39528, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload/_codecs_iso2022.cpython-312-x86_64-linux-gnu.so", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=16384, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload/_codecs_jp.cpython-312-x86_64-linux-gnu.so", {st_mode=S_IFREG|0644, st_size=277064, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload/_codecs_jp.cpython-312-x86_64-linux-gnu.so", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=16384, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload/_codecs_hk.cpython-312-x86_64-linux-gnu.so", {st_mode=S_IFREG|0644, st_size=162408, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload/_codecs_hk.cpython-312-x86_64-linux-gnu.so", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=16384, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload/_codecs_cn.cpython-312-x86_64-linux-gnu.so", {st_mode=S_IFREG|0644, st_size=154184, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload/_codecs_cn.cpython-312-x86_64-linux-gnu.so", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=16384, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload/_codecs_tw.cpython-312-x86_64-linux-gnu.so", {st_mode=S_IFREG|0644, st_size=117320, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload/_codecs_tw.cpython-312-x86_64-linux-gnu.so", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=16384, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload/_multibytecodec.cpython-312-x86_64-linux-gnu.so", {st_mode=S_IFREG|0644, st_size=54664, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload/_multibytecodec.cpython-312-x86_64-linux-gnu.so", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/charset_normalizer", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/charset_normalizer/legacy.py", {st_mode=S_IFREG|0664, st_size=2651, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/charset_normalizer/legacy.py", {st_mode=S_IFREG|0664, st_size=2651, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/charset_normalizer/__pycache__/legacy.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/charset_normalizer", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/charset_normalizer/version.py", {st_mode=S_IFREG|0664, st_size=115, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/charset_normalizer/version.py", {st_mode=S_IFREG|0664, st_size=115, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/charset_normalizer/__pycache__/version.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=16384, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/http", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/http/cookiejar.py", {st_mode=S_IFREG|0644, st_size=77438, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/http/cookiejar.py", {st_mode=S_IFREG|0644, st_size=77438, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/http/__pycache__/cookiejar.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/copy.py", {st_mode=S_IFREG|0644, st_size=8412, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/copy.py", {st_mode=S_IFREG|0644, st_size=8412, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/copy.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/urllib", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/urllib/request.py", {st_mode=S_IFREG|0644, st_size=103013, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/urllib/request.py", {st_mode=S_IFREG|0644, st_size=103013, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/urllib/__pycache__/request.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/urllib", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/urllib/error.py", {st_mode=S_IFREG|0644, st_size=2415, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/urllib/error.py", {st_mode=S_IFREG|0644, st_size=2415, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/urllib/__pycache__/error.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/urllib", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/urllib/response.py", {st_mode=S_IFREG|0644, st_size=2361, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/urllib/response.py", {st_mode=S_IFREG|0644, st_size=2361, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/urllib/__pycache__/response.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/http", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/http/cookies.py", {st_mode=S_IFREG|0644, st_size=21659, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/http/cookies.py", {st_mode=S_IFREG|0644, st_size=21659, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/http/__pycache__/cookies.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=16384, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests/packages.py", {st_mode=S_IFREG|0664, st_size=904, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests/packages.py", {st_mode=S_IFREG|0664, st_size=904, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests/__pycache__/packages.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=16384, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/idna/__init__.cpython-312-x86_64-linux-gnu.so", 0x7fffa46ca660, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/idna/__init__.abi3.so", 0x7fffa46ca660, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/idna/__init__.so", 0x7fffa46ca660, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/idna/__init__.py", {st_mode=S_IFREG|0664, st_size=944, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/idna/__init__.py", {st_mode=S_IFREG|0664, st_size=944, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/idna/__pycache__/__init__.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/idna", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/idna", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/idna", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/idna", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/idna/core.py", {st_mode=S_IFREG|0664, st_size=32580, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/idna/core.py", {st_mode=S_IFREG|0664, st_size=32580, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/idna/__pycache__/core.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/idna", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/idna/idnadata.py", {st_mode=S_IFREG|0664, st_size=45763, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/idna/idnadata.py", {st_mode=S_IFREG|0664, st_size=45763, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/idna/__pycache__/idnadata.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/idna", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/idna/intranges.py", {st_mode=S_IFREG|0664, st_size=1851, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/idna/intranges.py", {st_mode=S_IFREG|0664, st_size=1851, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/idna/__pycache__/intranges.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/idna", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/idna/package_data.py", {st_mode=S_IFREG|0664, st_size=21, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/idna/package_data.py", {st_mode=S_IFREG|0664, st_size=21, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/idna/__pycache__/package_data.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests/utils.py", {st_mode=S_IFREG|0664, st_size=33619, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests/utils.py", {st_mode=S_IFREG|0664, st_size=33619, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests/__pycache__/utils.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests/certs.py", {st_mode=S_IFREG|0664, st_size=429, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests/certs.py", {st_mode=S_IFREG|0664, st_size=429, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests/__pycache__/certs.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=16384, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/certifi/__init__.cpython-312-x86_64-linux-gnu.so", 0x7fffa46c9bf0, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/certifi/__init__.abi3.so", 0x7fffa46c9bf0, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/certifi/__init__.so", 0x7fffa46c9bf0, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/certifi/__init__.py", {st_mode=S_IFREG|0664, st_size=94, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/certifi/__init__.py", {st_mode=S_IFREG|0664, st_size=94, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/certifi/__pycache__/__init__.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/certifi", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/certifi", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/certifi", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/certifi", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/certifi/core.py", {st_mode=S_IFREG|0664, st_size=3394, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/certifi/core.py", {st_mode=S_IFREG|0664, st_size=3394, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/certifi/__pycache__/core.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests/__version__.py", {st_mode=S_IFREG|0664, st_size=435, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests/__version__.py", {st_mode=S_IFREG|0664, st_size=435, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests/__pycache__/__version__.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests/_internal_utils.py", {st_mode=S_IFREG|0664, st_size=1495, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests/_internal_utils.py", {st_mode=S_IFREG|0664, st_size=1495, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests/__pycache__/_internal_utils.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests/cookies.py", {st_mode=S_IFREG|0664, st_size=18590, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests/cookies.py", {st_mode=S_IFREG|0664, st_size=18590, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests/__pycache__/cookies.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests/structures.py", {st_mode=S_IFREG|0664, st_size=2912, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests/structures.py", {st_mode=S_IFREG|0664, st_size=2912, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests/__pycache__/structures.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/readers.py", {st_mode=S_IFREG|0644, st_size=327, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/readers.py", {st_mode=S_IFREG|0644, st_size=327, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/importlib/__pycache__/readers.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/resources", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/resources/readers.py", {st_mode=S_IFREG|0644, st_size=4303, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/resources/readers.py", {st_mode=S_IFREG|0644, st_size=4303, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/importlib/resources/__pycache__/readers.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/resources", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/resources/_itertools.py", {st_mode=S_IFREG|0644, st_size=1277, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/importlib/resources/_itertools.py", {st_mode=S_IFREG|0644, st_size=1277, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/importlib/resources/__pycache__/_itertools.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests/api.py", {st_mode=S_IFREG|0664, st_size=6449, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests/api.py", {st_mode=S_IFREG|0664, st_size=6449, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests/__pycache__/api.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests/sessions.py", {st_mode=S_IFREG|0664, st_size=30495, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests/sessions.py", {st_mode=S_IFREG|0664, st_size=30495, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests/__pycache__/sessions.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests/adapters.py", {st_mode=S_IFREG|0664, st_size=27451, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests/adapters.py", {st_mode=S_IFREG|0664, st_size=27451, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests/__pycache__/adapters.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests/auth.py", {st_mode=S_IFREG|0664, st_size=10186, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests/auth.py", {st_mode=S_IFREG|0664, st_size=10186, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests/__pycache__/auth.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests/models.py", {st_mode=S_IFREG|0664, st_size=35418, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests/models.py", {st_mode=S_IFREG|0664, st_size=35418, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests/__pycache__/models.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/encodings", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/encodings/idna.py", {st_mode=S_IFREG|0644, st_size=9710, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/encodings/idna.py", {st_mode=S_IFREG|0644, st_size=9710, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/encodings/__pycache__/idna.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/stringprep.py", {st_mode=S_IFREG|0644, st_size=12917, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/stringprep.py", {st_mode=S_IFREG|0644, st_size=12917, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/usr/lib/python3.12/__pycache__/stringprep.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests/hooks.py", {st_mode=S_IFREG|0664, st_size=733, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests/hooks.py", {st_mode=S_IFREG|0664, st_size=733, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests/__pycache__/hooks.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests/status_codes.py", {st_mode=S_IFREG|0664, st_size=4322, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests/status_codes.py", {st_mode=S_IFREG|0664, st_size=4322, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/requests/__pycache__/status_codes.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/contrib/__init__.cpython-312-x86_64-linux-gnu.so", 0x7fffa46c9580, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/contrib/__init__.abi3.so", 0x7fffa46c9580, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/contrib/__init__.so", 0x7fffa46c9580, 0) = -1 ENOENT (No such file or directory)
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/contrib/__init__.py", {st_mode=S_IFREG|0664, st_size=0, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/contrib/__init__.py", {st_mode=S_IFREG|0664, st_size=0, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/contrib/__pycache__/__init__.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/contrib", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/contrib", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/contrib", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/contrib", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/contrib/socks.py", {st_mode=S_IFREG|0664, st_size=7566, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/contrib/socks.py", {st_mode=S_IFREG|0664, st_size=7566, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/urllib3/contrib/__pycache__/socks.cpython-312.pyc", O_RDONLY|O_CLOEXEC) = 3
+3001  getcwd("/home/shihab/package-lab", 1024) = 25
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/usr/lib/python3.12/lib-dynload", {st_mode=S_IFDIR|0755, st_size=16384, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+3001  newfstatat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/certifi/cacert.pem", {st_mode=S_IFREG|0664, st_size=240216, ...}, 0) = 0
+3001  openat(AT_FDCWD, "/home/shihab/package-lab/venv/lib/python3.12/site-packages/certifi/cacert.pem", O_RDONLY) = 3
+3001  exit_group(0)                     = ?
