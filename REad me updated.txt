@@ -1,0 +1,435 @@
+
+This project is a **hybrid malicious-package detection prototype**. It combines:
+
+1. Static machine-learning analysis
+2. Read-only source-code scanning
+3. Dynamic behavior evidence from an isolated VM
+4. Rule-based evidence fusion and triage
+5. Optional local LLM explanation
+
+## 1. Main pipeline
+
+The main entry point is `run_project.py`.
+
+It does this:
+
+```text
+Labelled_Dataset.csv
+        |
+        v
+Train static ML model
+        |
+        v
+Predict one known package
+        |
+        +--> Optional imported sandbox trace
+        |          |
+        |          v
+        |   Analyze behavior
+        |
+        v
+Static Analysis Agent
+Behavior Analysis Agent
+Decision Agent
+        |
+        v
+package_decision_report.json
+llm_review_prompt.txt
+```
+
+The program **does not download, install, or execute packages**.
+
+Example:
+
+```powershell
+python run_project.py `
+  --dataset "..\03_dataset\Labelled_Dataset.csv" `
+  --package-name "URIjs-1.16.1" `
+  --trace examples\safe_trace_example.json `
+  --output outputs
+```
+
+## 2. Dataset loading
+
+`src/data.py` loads `Labelled_Dataset.csv`.
+
+The dataset contains:
+
+- `Malicious`: target label, `0` or `1`
+- `Package Repository`: `NPM` or `PyPI`
+- `Package Name`
+- Numeric static features
+
+The loader removes the three metadata columns and keeps the numeric features for machine learning.
+
+Missing feature values are converted to `NaN`. They are later replaced with median values during model training.
+
+## 3. Static machine-learning model
+
+`src/static_model.py` trains the detector.
+
+The process is:
+
+1. Load the dataset.
+2. Split it into 80% training and 20% testing data.
+3. Preserve the malicious/benign class ratio using stratification.
+4. Use XGBoost if installed.
+5. Otherwise use a Random Forest fallback.
+6. Replace missing values using median imputation.
+7. Calculate:
+   - Accuracy
+   - Precision
+   - Recall
+   - F1 score
+   - ROC-AUC
+8. Save the trained model using `joblib`.
+
+The model outputs a probability such as:
+
+```text
+static_malicious_probability = 0.82
+```
+
+The default label threshold is:
+
+```text
+probability >= 0.5  -> malicious
+probability < 0.5   -> benign
+```
+
+The outputs are stored in:
+
+```text
+outputs/static/static_metrics.json
+outputs/static/static_confusion_matrix.csv
+outputs/static/static_feature_importance.csv
+outputs/static/static_model.joblib
+```
+
+Important: this model can predict only packages represented in the dataset when using `predict_known_package()`.
+
+## 4. Source scanner for new packages
+
+`src/source_scan.py` is a separate lightweight scanner.
+
+It reads an already-unpacked package directory without importing or executing it.
+
+It searches for patterns such as:
+
+- `postinstall` or other install hooks
+- Shell execution
+- Network access
+- Credential-file access
+- Base64 or dynamic code evaluation
+- Download-and-execute behavior
+
+For example:
+
+```text
+child_process
+subprocess
+curl | bash
+.npmrc
+.ssh
+eval(...)
+base64.b64decode(...)
+```
+
+Each finding adds a configured amount to a heuristic score.
+
+For example:
+
+```text
+shell execution       +0.20
+obfuscation           +0.18
+download and execute  +0.30
+```
+
+The final score is limited to $1.0$.
+
+This score is **not the same thing** as the trained ML probability. It is a transparent heuristic:
+
+```text
+static_source_risk_score = 0.65
+```
+
+Run it with:
+
+```powershell
+python scan_source.py `
+  --source-dir "C:\path\to\package" `
+  --output outputs\source_scan.json
+```
+
+Tests, documentation, examples, and CI files are excluded by default because they commonly contain harmless suspicious-looking strings.
+
+## 5. Dynamic trace analysis
+
+The project does not run packages itself. Instead, behavior is collected separately inside an isolated VM or sandbox.
+
+A trace looks like:
+
+```json
+{
+  "observed": {
+    "install_hooks": ["setup.py"],
+    "processes": ["python setup.py"],
+    "commands": ["python setup.py"],
+    "files_read": ["/sandbox/package/setup.py"],
+    "files_written": ["/tmp/build.log"],
+    "network_connections": []
+  }
+}
+```
+
+`src/dynamic_trace.py` reads this JSON and checks for:
+
+- Install hooks
+- Network connections
+- Access to sensitive paths
+- Suspicious commands
+- Processes
+- File writes
+
+It calculates a dynamic score approximately as:
+
+$$
+R_d =
+0.12H +
+0.20N +
+0.30S +
+0.25C +
+0.05P +
+0.03W
+$$
+
+where:
+
+- $H$: install hook exists
+- $N$: network connection exists
+- $S$: sensitive path accessed
+- $C$: suspicious command found
+- $P$: number of processes, capped
+- $W$: number of file writes, capped
+
+The score is capped at $1.0$.
+
+The module only reads observations. It never launches commands or contacts the network.
+
+## 6. Converting `strace`
+
+`src/strace_adapter.py` converts an existing Linux `strace` log into the JSON format expected by the dynamic analyzer.
+
+It extracts:
+
+- `execve()` calls as processes and commands
+- `connect()` calls as network activity
+- `open()` and `openat()` calls as file reads or writes
+
+Run it with:
+
+```powershell
+python convert_strace.py `
+  --log "C:\path\to\trace.log" `
+  --package-name "example-package" `
+  --ecosystem NPM `
+  --output outputs\imported_trace.json
+```
+
+It parses a log only. It does not run `strace` and does not execute the package.
+
+## 7. Evidence fusion and triage
+
+`src/triage.py` decides what should happen next.
+
+The static score is divided into three ranges:
+
+```text
+Below 0.25       low risk
+0.25 to 0.75     uncertain
+Above 0.75       high risk
+```
+
+When no dynamic trace exists:
+
+```text
+High static score       -> human review
+Uncertain static score  -> queue for dynamic analysis
+Low static score        -> record static-only result
+```
+
+When both static and dynamic scores exist:
+
+```text
+fused_score = 0.5 * static_score + 0.5 * dynamic_score
+```
+
+If the scores differ by at least `0.35`, the system reports:
+
+```text
+human_review_modality_disagreement
+```
+
+This is deliberate. A disagreement might mean:
+
+- Static analysis found suspicious code that did not execute
+- Dynamic analysis did not exercise the malicious path
+- One detector generated a false positive
+- The package behaves differently across environments
+
+The system therefore does not blindly output “safe” or “malicious.” It can abstain and request more evidence.
+
+## 8. Agents
+
+`src/agents.py` contains three simple evidence-processing agents.
+
+### Static Analysis Agent
+
+Reports the static model probability or source-scanner heuristic score.
+
+### Behavior Analysis Agent
+
+Reports the dynamic score and human-readable evidence.
+
+### Decision Agent
+
+Calls the triage policy and produces the final action.
+
+These are ordinary Python functions. They are not autonomous AI agents.
+
+## 9. New-package fusion
+
+For a package not present in the labelled dataset, use `fuse_source_trace.py`.
+
+```powershell
+python fuse_source_trace.py `
+  --source-scan outputs\source_scan.json `
+  --trace outputs\imported_trace.json `
+  --package-name "example-package" `
+  --ecosystem NPM `
+  --output outputs
+```
+
+This creates:
+
+```text
+new_package_evidence_report.json
+new_package_llm_review_prompt.txt
+```
+
+The new-package pipeline uses the rule-based source scanner, not the 140-feature dataset model.
+
+## 10. Optional LLM review
+
+`src/llm_review.py` prepares a limited evidence summary for a local LLM.
+
+`run_local_llm_review.py` uses:
+
+```text
+Qwen/Qwen2.5-1.5B-Instruct
+```
+
+The LLM receives:
+
+- Package metadata
+- Source-scanner findings
+- Dynamic summary
+- Triage result
+- Known limitations
+
+It does not receive raw package source code and does not execute anything.
+
+Its job is to explain the evidence, not to make the final security decision.
+
+The output may contain:
+
+```json
+{
+  "risk_level": "medium",
+  "cited_evidence": [],
+  "false_positive_considerations": [],
+  "safe_next_step": "...",
+  "limitations": []
+}
+```
+
+The LLM result is explicitly not treated as:
+
+- Ground truth
+- A calibrated probability
+- Proof that a package is safe
+- A replacement for human review
+
+## 11. Research experiments
+
+### Cross-ecosystem transfer
+
+`src/transfer_evaluation.py` trains:
+
+```text
+NPM  -> PyPI
+PyPI -> NPM
+```
+
+This measures whether static features learned from one ecosystem transfer successfully to the other.
+
+Run:
+
+```powershell
+python evaluate_static_transfer.py `
+  --dataset "..\03_dataset\Labelled_Dataset.csv" `
+  --output outputs\static_transfer_metrics.json
+```
+
+### Label efficiency
+
+`src/label_efficiency.py` tests whether adding a small number of labelled target-ecosystem packages improves performance.
+
+It compares:
+
+```text
+Source ecosystem only
+Source ecosystem + k target labels
+k target labels only
+```
+
+It repeats the experiment with multiple random seeds and evaluates on a separate target holdout.
+
+### Triage workload
+
+`src/triage_evaluation.py` reads a CSV of package scores and calculates:
+
+- Dynamic-analysis availability
+- Dynamic referral rate
+- Human-review rate
+- Modality disagreement rate
+- Average dynamic-analysis time
+- Optional precision, recall, and F1
+
+Run:
+
+```powershell
+python evaluate_triage_policy.py `
+  --input examples\triage_input_template.csv `
+  --output outputs\triage_policy_metrics.json
+```
+
+## 12. What the project is really claiming
+
+The project is not claiming:
+
+```text
+"The system can prove a package is safe."
+```
+
+It is claiming that the project can provide a reproducible workflow that:
+
+1. Uses static ML evidence.
+2. Adds read-only source evidence for new packages.
+3. Imports behavior from isolated execution.
+4. Makes uncertainty explicit.
+5. Detects disagreement between evidence sources.
+6. Measures the cost of dynamic analysis and human review.
+7. Provides bounded LLM explanations without letting the LLM become the detector.
+
+The tests in `tests` check the individual components, including source scanning, trace interpretation, triage decisions, dataset handling, and LLM evidence parsing.
