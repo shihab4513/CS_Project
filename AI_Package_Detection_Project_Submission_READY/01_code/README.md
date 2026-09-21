@@ -80,6 +80,35 @@ This output is central to the revised research question: report both NPM-to-PyPI
 and PyPI-to-NPM results rather than assuming that a single cross-language score
 generalizes equally well in both directions.
 
+## Measure target-ecosystem label efficiency
+
+`evaluate_label_efficiency.py` runs Experiment C from the Colab notebook as a
+reproducible command-line experiment. It compares training on all source-
+ecosystem packages plus `k` target labels against training on the `k` target
+labels alone. Each seed creates a target pool and a held-out target test set;
+the holdout is never used for training or label-budget sampling.
+
+```powershell
+python evaluate_label_efficiency.py `
+  --dataset "..\03_dataset\Labelled_Dataset.csv" `
+  --output outputs\label_efficiency `
+  --n-seeds 8
+```
+
+The output directory contains raw per-seed results, an aggregated CSV table,
+and `label_efficiency_summary.json`. The experiment uses the same classifier
+factory as the main project, but its label-budget results must not be compared
+with transfer results produced using different hyperparameters or splits.
+
+To regenerate the updated presentation from the revised source deck:
+
+```powershell
+python create_updated_presentation.py
+```
+
+This writes `04_documents/Revised_AI_Based_Malicious_Package_Detection_Project_Presentation_v2.pptx`
+and leaves the original presentation unchanged.
+
 ## Measure triage workload and disagreement
 
 After collecting static scores and any approved VM traces, make a CSV following
@@ -107,6 +136,7 @@ After a run, `outputs/` contains:
 - `static/static_model.joblib`: trained model artifact.
 - `package_decision_report.json`: fused static/dynamic finding for one record.
 - `llm_review_prompt.txt`: evidence-only prompt for a later LLM review agent.
+- `label_efficiency/`: target-label budget results from Experiment C.
 
 ## Next project modules
 

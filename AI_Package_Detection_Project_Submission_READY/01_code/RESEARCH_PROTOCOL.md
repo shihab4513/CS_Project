@@ -54,6 +54,7 @@ static and dynamic signals?
 | Dynamic trace collection | What install-time behavior is observed in an isolated VM? | Normalized trace JSON, collection conditions, duration |
 | Triage analysis | How much work moves to dynamic review and when do modalities disagree? | Queue rate, review rate, disagreement rate, analysis time |
 | Evidence-grounded review | Can a reviewer understand why a case was referred? | Immutable source/trace references and bounded LLM prompt |
+| Target-label efficiency | How many labels from a new ecosystem are needed before source-ecosystem transfer adds little? | Multi-seed F1, ROC-AUC, PR-AUC curves and source-data gain by budget |
 
 ## Current Verified Result
 
