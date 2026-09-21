@@ -1,45 +1,147 @@
-1. Prepare the VM
-1. Open Linux Mint in VirtualBox.
-2. Create a VirtualBox snapshot named Clean-Before-Test.
-3. Disable shared folders, shared clipboard, and drag-and-drop while testing.
-4. Open Terminal and run:
 sudo apt update
 sudo apt install -y strace python3-venv nodejs npm
 mkdir -p ~/package-lab
 cd ~/package-lab
-2. Trace a safe PyPI package: requests
-Create an isolated Python environment:
-python3 -m venv venv
-source venv/bin/activate
-python -m pip install --upgrade pip
-python -m pip install --no-cache-dir --no-deps requests==2.32.3
-Trace a simple import:
-strace -f -qq -e trace=process,file,network -s 256 -o requests_import.strace python -c "import requests; print(requests.__version__)"
-Optional: trace one safe network request to example.com:
-strace -f -qq -e trace=process,file,network -s 256 -o requests_network.strace python -c "import requests; r=requests.get('https://example.com', timeout=10); print(r.status_code)"
-Check that logs exist:
-ls -lh *.strace
-3. Trace a safe npm package: lodash
-mkdir -p ~/package-lab/lodash-test
-cd ~/package-lab/lodash-test
-npm init -y
-npm install --ignore-scripts --no-audit --no-fund lodash@4.17.21
---ignore-scripts prevents package installation scripts from running.
-Trace a simple local operation:
-strace -f -qq -e trace=process,file,network -s 256 -o lodash_runtime.strace node -e "const _=require('lodash'); console.log(_.camelCase('AI package detection'))"
-Check the log:
-ls -lh lodash_runtime.strace
-4. Copy only trace files to Windows
-Create a small archive:
 cd ~/package-lab
-tar -czf safe_trace_logs.tar.gz *.strace lodash-test/lodash_runtime.strace
-After testing is complete, temporarily enable a shared folder or use a USB drive to copy only safe_trace_logs.tar.gz to Windows. Then disable the shared folder again.
-Restore the VM snapshot after finishing the experiment.
-5. Convert the traces on Windows
-Open PowerShell inside your project folder and activate the virtual environment:
-cd "F:\Computer Security\Project run code\VM\ai_package_detection_project"
-.\.venv\Scripts\Activate.ps1
-Convert the PyPI trace:
-python convert_strace.py --log "F:\Computer Security\Project run code\VM\trace_exports\requests_import.strace" --package-name "requests-2.32.3" --ecosystem PyPI --output ".\outputs\requests_import_trace.json"
-Convert the npm trace:
-python convert_strace.py --log "F:\Computer Security\Project run code\VM\trace_exports\lodash_runtime.strace" --pack
+source venv/bin/activate
+python -m pip install --no-cache-dir "requests==2.32.3"
+python -c "import requests; print(requests.__version__)"
+It should print:
+2.32.3
+Then create a valid import trace:
+strace -f -qq -e trace=process,file,network -s 256 -o requests_import.strace python -c "import requests; print(requests.__version__)"
+Optional but recommended, create a valid safe-network trace:
+strace -f -qq -e trace=process,file,network -s 256 -o requests_network.strace python -c "import requests; r=requests.get('https://example.com', timeout=10); print(r.status_code)"
+It should normally print 200.
+Now create a new archive containing only successful traces:
+cd ~/package-lab
+tar -czf safe_trace_logs_complete.tar.gz requests_import.strace requests_network.strace lodash-test/lodash_runtime.strace
+ls -lh safe_trace_logs_complete.tar.gzcd ~/package-lab
+source venv/bin/activate
+python -m pip install --no-cache-dir "requests==2.32.3"
+python -c "import requests; print(requests.__version__)"
+It should print:
+2.32.3
+Then create a valid import trace:
+strace -f -qq -e trace=process,file,network -s 256 -o requests_import.strace python -c "import requests; print(requests.__version__)"
+Optional but recommended, create a valid safe-network trace:
+strace -f -qq -e trace=process,file,network -s 256 -o requests_network.strace python -c "import requests; r=requests.get('https://example.com', timeout=10); print(r.status_code)"
+It should normally print 200.
+Now create a new archive containing only successful traces:
+cd ~/package-lab
+tar -czf safe_trace_logs_complete.tar.gz requests_import.strace requests_network.strace lodash-test/lodash_runtime.strace
+ls -lh safe_trace_logs_complete.tar.gzcd ~/package-lab
+source venv/bin/activate
+python -m pip install --no-cache-dir "requests==2.32.3"
+python -c "import requests; print(requests.__version__)"
+It should print:
+2.32.3
+Then create a valid import trace:
+strace -f -qq -e trace=process,file,network -s 256 -o requests_import.strace python -c "import requests; print(requests.__version__)"
+Optional but recommended, create a valid safe-network trace:
+strace -f -qq -e trace=process,file,network -s 256 -o requests_network.strace python -c "import requests; r=requests.get('https://example.com', timeout=10); print(r.status_code)"
+It should normally print 200.
+Now create a new archive containing only successful traces:
+cd ~/package-lab
+tar -czf safe_trace_logs_complete.tar.gz requests_import.strace requests_network.strace lodash-test/lodash_runtime.strace
+ls -lh safe_trace_logs_complete.tar.gzcd ~/package-lab
+source venv/bin/activate
+python -m pip install --no-cache-dir "requests==2.32.3"
+python -c "import requests; print(requests.__version__)"
+It should print:
+2.32.3
+Then create a valid import trace:
+strace -f -qq -e trace=process,file,network -s 256 -o requests_import.strace python -c "import requests; print(requests.__version__)"
+Optional but recommended, create a valid safe-network trace:
+strace -f -qq -e trace=process,file,network -s 256 -o requests_network.strace python -c "import requests; r=requests.get('https://example.com', timeout=10); print(r.status_code)"
+It should normally print 200.
+Now create a new archive containing only successful traces:
+cd ~/package-lab
+tar -czf safe_trace_logs_complete.tar.gz requests_import.strace requests_network.strace lodash-test/lodash_runtime.strace
+ls -lh safe_trace_logs_complete.tar.gzcd ~/package-lab
+source venv/bin/activate
+python -m pip install --no-cache-dir "requests==2.32.3"
+python -c "import requests; print(requests.__version__)"
+It should print:
+2.32.3
+Then create a valid import trace:
+strace -f -qq -e trace=process,file,network -s 256 -o requests_import.strace python -c "import requests; print(requests.__version__)"
+Optional but recommended, create a valid safe-network trace:
+strace -f -qq -e trace=process,file,network -s 256 -o requests_network.strace python -c "import requests; r=requests.get('https://example.com', timeout=10); print(r.status_code)"
+It should normally print 200.
+Now create a new archive containing only successful traces:
+cd ~/package-lab
+tar -czf safe_trace_logs_complete.tar.gz requests_import.strace requests_network.strace lodash-test/lodash_runtime.strace
+ls -lh safe_trace_logs_complete.tar.gzcd ~/package-lab
+source venv/bin/activate
+python -m pip install --no-cache-dir "requests==2.32.3"
+python -c "import requests; print(requests.__version__)"
+It should print:
+2.32.3
+Then create a valid import trace:
+strace -f -qq -e trace=process,file,network -s 256 -o requests_import.strace python -c "import requests; print(requests.__version__)"
+Optional but recommended, create a valid safe-network trace:
+strace -f -qq -e trace=process,file,network -s 256 -o requests_network.strace python -c "import requests; r=requests.get('https://example.com', timeout=10); print(r.status_code)"
+It should normally print 200.
+Now create a new archive containing only successful traces:
+cd ~/package-lab
+tar -czf safe_trace_logs_complete.tar.gz requests_import.strace requests_network.strace lodash-test/lodash_runtime.strace
+ls -lh safe_trace_logs_complete.tar.gzcd ~/package-lab
+source venv/bin/activate
+python -m pip install --no-cache-dir "requests==2.32.3"
+python -c "import requests; print(requests.__version__)"
+It should print:
+2.32.3
+Then create a valid import trace:
+strace -f -qq -e trace=process,file,network -s 256 -o requests_import.strace python -c "import requests; print(requests.__version__)"
+Optional but recommended, create a valid safe-network trace:
+strace -f -qq -e trace=process,file,network -s 256 -o requests_network.strace python -c "import requests; r=requests.get('https://example.com', timeout=10); print(r.status_code)"
+It should normally print 200.
+Now create a new archive containing only successful traces:
+cd ~/package-lab
+tar -czf safe_trace_logs_complete.tar.gz requests_import.strace requests_network.strace lodash-test/lodash_runtime.strace
+ls -lh safe_trace_logs_complete.tar.gzcd ~/package-lab
+source venv/bin/activate
+python -m pip install --no-cache-dir "requests==2.32.3"
+python -c "import requests; print(requests.__version__)"
+It should print:
+2.32.3
+Then create a valid import trace:
+strace -f -qq -e trace=process,file,network -s 256 -o requests_import.strace python -c "import requests; print(requests.__version__)"
+Optional but recommended, create a valid safe-network trace:
+strace -f -qq -e trace=process,file,network -s 256 -o requests_network.strace python -c "import requests; r=requests.get('https://example.com', timeout=10); print(r.status_code)"
+It should normally print 200.
+Now create a new archive containing only successful traces:
+cd ~/package-lab
+tar -czf safe_trace_logs_complete.tar.gz requests_import.strace requests_network.strace lodash-test/lodash_runtime.strace
+ls -lh safe_trace_logs_complete.tar.gzcd ~/package-lab
+source venv/bin/activate
+python -m pip install --no-cache-dir "requests==2.32.3"
+python -c "import requests; print(requests.__version__)"
+It should print:
+2.32.3
+Then create a valid import trace:
+strace -f -qq -e trace=process,file,network -s 256 -o requests_import.strace python -c "import requests; print(requests.__version__)"
+Optional but recommended, create a valid safe-network trace:
+strace -f -qq -e trace=process,file,network -s 256 -o requests_network.strace python -c "import requests; r=requests.get('https://example.com', timeout=10); print(r.status_code)"
+It should normally print 200.
+Now create a new archive containing only successful traces:
+cd ~/package-lab
+tar -czf safe_trace_logs_complete.tar.gz requests_import.strace requests_network.strace lodash-test/lodash_runtime.strace
+ls -lh safe_trace_logs_complete.tar.gz
+
+cd ~/package-lab
+source venv/bin/activate
+python -m pip install --no-cache-dir "requests==2.32.3"
+python -c "import requests; print(requests.__version__)"
+It should print:
+2.32.3
+Then create a valid import trace:
+strace -f -qq -e trace=process,file,network -s 256 -o requests_import.strace python -c "import requests; print(requests.__version__)"
+Optional but recommended, create a valid safe-network trace:
+strace -f -qq -e trace=process,file,network -s 256 -o requests_network.strace python -c "import requests; r=requests.get('https://example.com', timeout=10); print(r.status_code)"
+It should normally print 200.
+Now create a new archive containing only successful traces:
+cd ~/package-lab
+tar -czf safe_trace_logs_complete.tar.gz requests_import.strace requests_network.strace lodash-test/lodash_runtime.strace
+ls -lh safe_trace_logs_complete.tar.gz
