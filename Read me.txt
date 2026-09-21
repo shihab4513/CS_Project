@@ -1,0 +1,320 @@
+Whole  project code is in AI_Package_Detection_Project_Submission_READY
+
+
+## What This Project Does
+
+This is a **safe malicious-package detection research prototype**. It combines:
+
+1. Static machine-learning detection from a labeled npm/PyPI dataset.
+2. Read-only source-code scanning.
+3. Imported dynamic behavior from an isolated VM trace.
+4. A rule-based triage policy.
+5. Optional local LLM explanation of collected evidence.
+
+The program itself does **not** download, install, or execute packages.
+
+```mermaid
+flowchart TD
+    A[Labelled_Dataset.csv] --> B[Static ML model]
+    B --> C[Static probability]
+    D[Unpacked package source] --> E[Read-only source scanner]
+    E --> F[Heuristic source risk]
+    G[Existing VM strace log] --> H[strace converter]
+    H --> I[Trace JSON]
+    I --> J[Dynamic behavior analyzer]
+    J --> K[Dynamic risk score]
+    C --> L[Triage decision]
+    K --> L
+    F --> M[New-package evidence fusion]
+    I --> M
+    M --> N[Bounded LLM review]
+```
+
+## Main Execution Path
+
+The main entry point is `run_project.py:1-60`.
+
+It:
+
+1. Trains a static classifier using `Labelled_Dataset.csv`.
+2. Saves the trained model and evaluation metrics.
+3. Finds a named package already present in the dataset.
+4. Produces a malicious probability for that package.
+5. Optionally loads an imported sandbox trace.
+6. Converts static and dynamic results into agent-style findings.
+7. Applies the triage policy.
+8. Writes:
+   - `static_metrics.json`
+   - `static_model.joblib`
+   - `static_confusion_matrix.csv`
+   - `static_feature_importance.csv`
+   - `package_decision_report.json`
+   - `llm_review_prompt.txt`
+
+The command requires a package name already existing in the official dataset. It is therefore mainly for evaluating known records, not arbitrary new packages.
+
+## Dataset Handling
+
+`data.py:1-45` loads the official CSV.
+
+The expected columns are:
+
+- `Malicious`: binary target, `0` or `1`
+- `Package Repository`: `NPM` or `PyPI`
+- `Package Name`: package metadata
+
+Everything except those three columns becomes a numeric feature. Invalid numeric values become missing values.
+
+Missing values are not treated as benign. They are median-imputed inside the model pipeline, which avoids using test-set information during preprocessing.
+
+## Static Machine-Learning Model
+
+`static_model.py:1-174` implements the paper-dataset experiment.
+
+The normal model is:
+
+- XGBoost
+- 250 trees
+- Maximum depth 5
+- Learning rate `0.05`
+- Random seed `42`
+
+If XGBoost is unavailable, it uses a balanced Random Forest.
+
+The training process:
+
+1. Loads all features.
+2. Splits records into 80% training and 20% testing.
+3. Uses stratification so the malicious/benign ratio is preserved.
+4. Fits median imputation and the classifier together.
+5. Converts model output into the probability of class `1`, malicious.
+6. Uses `0.5` as the classification threshold.
+7. Calculates accuracy, precision, recall, F1, and ROC-AUC.
+8. Calculates metrics overall and separately for npm/PyPI.
+9. Saves the model and feature importances.
+
+`predict_known_package()` reloads the saved model, finds the first case-insensitive package-name match, and returns its predicted probability and reference label.
+
+## Cross-Ecosystem Evaluation
+
+`transfer_evaluation.py:1-72` tests whether static features transfer between ecosystems.
+
+It performs two experiments:
+
+- Train on NPM, test on PyPI.
+- Train on PyPI, test on NPM.
+
+This is different from the normal random train/test split. It exposes whether a model trained in one package ecosystem works in the other.
+
+The CLI wrapper is `evaluate_static_transfer.py:1-24`.
+
+## Read-Only Source Scanner
+
+`scan_source.py:1-27` is the command-line wrapper for `source_scan.py:1-161`.
+
+The scanner recursively examines an already-unpacked package. It:
+
+- Reads only bounded text files.
+- Does not import Python.
+- Does not run Node.
+- Does not run setup scripts.
+- Does not install dependencies.
+- Excludes tests, documentation, examples, benchmarks, and CI files by default.
+
+It searches for configured patterns such as:
+
+- npm install hooks
+- Shell or child-process execution
+- Network access
+- Credential-file access
+- Obfuscation or `eval`
+- Download-and-execute behavior
+
+Each category contributes a fixed heuristic weight. For example:
+
+- Shell execution: `0.20`
+- Sensitive-file access: `0.28`
+- Download-and-execute: `0.30`
+- Install hook: `0.12`
+
+The final score is capped at `1.0`.
+
+This score is **not** the same as the ML model probability. It is explainable rule-based evidence only.
+
+## Dynamic Trace Processing
+
+`convert_strace.py:1-24` converts an existing Linux `strace` log into JSON through `strace_adapter.py:1-67`.
+
+It extracts:
+
+- Executed processes
+- Commands
+- Files read
+- Files written
+- Network connections
+
+It only parses an existing log. It never launches `strace` or executes the package.
+
+`dynamic_trace.py:1-90` then interprets the JSON observations.
+
+Dynamic risk is based on signals such as:
+
+- Install hooks: `0.12`
+- Network connections: `0.20`
+- Sensitive paths: `0.30`
+- Suspicious commands: `0.25`
+- Process count
+- Files written
+
+The score is also capped at `1.0`.
+
+A clean trace means only that no configured behavior was observed during that trace. It does not prove the package is safe.
+
+## Evidence Agents
+
+`agents.py:1-72` provides three lightweight “agents”:
+
+### Static Analysis Agent
+
+Reports either:
+
+- The ML malicious probability, or
+- The source scanner’s heuristic score.
+
+It preserves the distinction between those two score types.
+
+### Behavior Analysis Agent
+
+Reports the dynamic score and textual evidence. If no trace exists, it explicitly reports that dynamic evidence is unavailable.
+
+### Decision Agent
+
+Passes static and dynamic scores into the triage policy and returns the action, reason, fused score, and policy description.
+
+These are ordinary Python functions, not autonomous AI agents.
+
+## Triage Policy
+
+`triage.py:1-71` determines what should happen next.
+
+The default static review band is `0.25` to `0.75`.
+
+With no dynamic result:
+
+- Below `0.25`: record as low static risk.
+- `0.25` through `0.75`: queue for dynamic analysis.
+- At least `0.75`: send for human review because static risk is high.
+
+With both scores:
+
+```text
+fused_score = 0.5 * static_score + 0.5 * dynamic_score
+```
+
+If the scores differ by at least `0.35`, the result is:
+
+```text
+human_review_modality_disagreement
+```
+
+Otherwise, the fused score determines whether the package receives low-risk, ambiguous-risk, or high-risk human review.
+
+The system deliberately favors **abstention and additional evidence** over an overconfident binary verdict.
+
+## New-Package Fusion
+
+`fuse_source_trace.py:1-56` handles packages that are not in the official dataset.
+
+It combines:
+
+1. A source-scan JSON file.
+2. An optional imported VM trace.
+3. Package metadata.
+
+For new packages, the static score comes from the source scanner, not the trained ML model. The report explicitly records this using:
+
+```text
+evidence_type = "heuristic_source_score"
+```
+
+It creates:
+
+- `new_package_evidence_report.json`
+- `new_package_llm_review_prompt.txt`
+
+## LLM Review
+
+`llm_review.py:1-111` prepares a restricted evidence summary.
+
+The LLM receives:
+
+- Package metadata
+- Source-scan findings
+- Dynamic risk summary
+- Triage action
+- Known limitations
+
+It does not receive raw source code or the complete raw trace.
+
+`run_local_llm_review.py:1-88` loads a local Hugging Face model, by default:
+
+```text
+Qwen/Qwen2.5-1.5B-Instruct
+```
+
+The LLM must return structured fields such as:
+
+- Risk level
+- Cited evidence
+- False-positive considerations
+- Safe next step
+- Limitations
+
+Its output is reviewer assistance only. It is not a calibrated probability, ground truth, or replacement for human review.
+
+## Evaluation of Triage Workload
+
+`triage_evaluation.py:1-89` reads an analyst-prepared CSV.
+
+Required columns:
+
+```text
+package_name
+ecosystem
+static_probability
+```
+
+Optional columns include:
+
+```text
+dynamic_probability
+dynamic_analysis_seconds
+ground_truth
+```
+
+It reports:
+
+- Dynamic-trace availability
+- Dynamic referral rate
+- Human-review rate
+- Modality-disagreement rate
+- Average dynamic-analysis time
+- Per-ecosystem metrics
+- Optional precision, recall, and F1
+
+The command-line wrapper is `evaluate_triage_policy.py:1-24`.
+
+## Tests
+
+The tests cover the main safety and behavior guarantees:
+
+- `test_source_scan.py:1-43`: static signals and exclusion of test fixtures
+- `test_strace_adapter.py:1-28`: parsing processes, written files, and connections
+- `test_dynamic_trace.py:1`: dynamic scoring behavior
+- `test_triage.py:1-22`: referral, disagreement, and low-risk decisions
+- `test_fuse_source_trace.py:1-47`: report generation
+- `test_llm_review.py:1-31`: bounded evidence and JSON extraction
+- `test_triage_evaluation.py:1-28`: workflow metrics
+- `test_agents.py:1`: agent behavior
+
+In short, the project is a **research workflow for combining static predictions, imported sandbox evidence, and cautious human-review triage**. It is intentionally not an autonomous malware verdict system.
