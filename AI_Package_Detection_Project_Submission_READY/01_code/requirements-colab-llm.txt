@@ -1,0 +1,4 @@
+# Google Colab installs PyTorch. These packages add a local, API-key-free LLM reviewer.
+transformers>=4.45,<5
+accelerate>=0.34
+safetensors>=0.4

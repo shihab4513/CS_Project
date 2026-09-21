@@ -1,0 +1,75 @@
+{
+  "scope": "Local LLM review of an already-created evidence report. The LLM received no package source code and did not install, download, or execute a package.",
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "bounded_evidence": {
+    "package": {
+      "package_name": "requests-2.32.3",
+      "ecosystem": "PyPI",
+      "static_malicious_probability": 0.4,
+      "static_label": "not automatically suspicious",
+      "reference_label": null,
+      "model_name": "Read-only rule-based source scanner (not the paper-dataset ML model)",
+      "evidence_type": "heuristic_source_score"
+    },
+    "source_scan": {
+      "heuristic_risk_score": 0.4,
+      "findings": [
+        {
+          "signal": "shell_execution",
+          "match_count": 2,
+          "example_files": [
+            "setup.py"
+          ],
+          "explanation": "Shell or child-process execution API found."
+        },
+        {
+          "signal": "network_access",
+          "match_count": 127,
+          "example_files": [
+            "setup.py",
+            "src\\requests\\adapters.py",
+            "src\\requests\\api.py"
+          ],
+          "explanation": "Network access indicator found."
+        },
+        {
+          "signal": "sensitive_access",
+          "match_count": 11,
+          "example_files": [
+            "src\\requests\\sessions.py",
+            "src\\requests\\utils.py"
+          ],
+          "explanation": "Potential access to a credential or sensitive file found."
+        }
+      ],
+      "limitation": "This lightweight scanner is not the paper's 140-feature extractor and its score must not be compared directly with the trained paper-dataset model probability."
+    },
+    "dynamic_evidence": {
+      "risk_score": 0.25,
+      "finding": "Outbound connections observed: 7."
+    },
+    "triage_policy": {
+      "agent": "Decision Agent",
+      "fused_risk_score": 0.325,
+      "decision": "human_review_ambiguous_fused_risk",
+      "reason": "Combined evidence remains in the review band.",
+      "policy": "Evidence-aware triage: queue uncertain static cases, review modality disagreement, and preserve incomplete-evidence limits."
+    },
+    "scope": "New-package evidence fusion. No package script, dependency, or source code was executed by this program."
+  },
+  "structured_review": {
+    "risk_level": "medium",
+    "cited_evidence": [
+      "shell_execution",
+      "network_access",
+      "sensitive_access"
+    ],
+    "false_positive_considerations": [],
+    "safe_next_step": "Review the findings for potential risks and consider additional checks such as manual testing or further analysis.",
+    "limitations": [
+      "This lightweight scanner is not the paper's 140-feature extractor and its score must not be compared directly with the trained paper-dataset model probability."
+    ]
+  },
+  "raw_model_response": "```json\n{\n  \"risk_level\": \"medium\",\n  \"cited_evidence\": [\"shell_execution\", \"network_access\", \"sensitive_access\"],\n  \"false_positive_considerations\": [],\n  \"safe_next_step\": \"Review the findings for potential risks and consider additional checks such as manual testing or further analysis.\",\n  \"limitations\": [\"This lightweight scanner is not the paper's 140-feature extractor and its score must not be compared directly with the trained paper-dataset model probability.\"]\n}\n```",
+  "limitation": "The LLM output is reviewer assistance, not a ground-truth label or a replacement for sandbox isolation and human review."
+}

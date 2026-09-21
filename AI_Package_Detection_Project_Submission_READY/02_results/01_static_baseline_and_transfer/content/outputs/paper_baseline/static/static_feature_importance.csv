@@ -1,0 +1,141 @@
+feature,importance
+Number of lines in source code,0.1374776
+presence of installation script,0.09581857
+.md,0.054452714
+.json,0.04245893
+Number of IP adress in metadata,0.03582218
+Number of lines in metadata,0.028577073
+homogeneous identifiers in source code,0.025977802
+.py,0.023764765
+.txt,0.021788886
+.rst,0.020067057
+homogeneous strings in source code,0.019749923
+shannon q3 ID metadata,0.018730834
+URLs in source code,0.01790553
+.yml,0.017118061
+shannon mean ID metadata,0.016686376
+bracket ratio max,0.014865509
+shannon max string metadata,0.014826708
+homogeneous identifiers in metadata,0.014805304
+Number of IP adress in source code,0.01451832
+Number of Words in metadata,0.013829132
+shannon q3 ID source code,0.013728913
+bracket ratio q3,0.012985768
+heterogeneous strings in metadata,0.012980892
+shannon std ID source code,0.012801608
+shannon mean ID source code,0.012695669
+shannon std ID metadata,0.012628601
+shannon max string source code,0.01220289
+heterogeneous strings in source code,0.011238606
+.js,0.011209178
+shannon max ID source code,0.010618763
+homogeneous strings in metadata,0.010270478
+Number of sospicious token in metadata,0.010209673
+Number of sospicious token in source code,0.009804281
+bracket ratio mean,0.009739367
+shannon q3 string source code,0.009623914
+shannon q3 string metadata,0.009615917
+heteregeneous identifiers in source code,0.009520613
+URLs in metadata,0.009471974
+Number of base64 chunks in source code,0.009197696
+.cfg,0.0090017365
+shannon mean string metadata,0.008744897
+shannon mean string source code,0.00868848
+eq ratio max,0.008595845
+shannon max ID metadata,0.008485819
+eq ratio mean,0.008471196
+bracket ratio std,0.00846881
+plus ratio mean,0.008348284
+eq ratio q3,0.008081223
+Number of Words in source code,0.008015131
+.css,0.0075912094
+shannon std string source code,0.007497063
+plus ratio max,0.007192819
+shannon std string metadata,0.0063156565
+Number of base64 chunks in metadata,0.005378182
+eq ratio std,0.0052536307
+heteregeneous identifiers in metadata,0.004719352
+plus ratio std,0.004595803
+plus ratio q3,0.0044003306
+.png,0.0023684602
+.ini,0.0
+.jpg,0.0
+.java,0.0
+.jar,0.0
+.cpp,0.0
+.erb,0.0
+.gemspec,0.0
+.gif,0.0
+.deb,0.0
+.gz,0.0
+.conf,0.0
+.csv,0.0
+.crt,0.0
+.c,0.0
+.cert,0.0
+.bat,0.0
+.bz2,0.0
+.bmp,0.0
+.aac,0.0
+.woff2,0.0
+.woff,0.0
+.tar,0.0
+.swf,0.0
+.sql,0.0
+.properties,0.0
+.jpeg,0.0
+.exe,0.0
+.eot,0.0
+.yaml,0.0
+.ttf,0.0
+.xml,0.0
+.svg,0.0
+.toml,0.0
+.key,0.0
+.markdown,0.0
+.sh,0.0
+.rpm,0.0
+.ps,0.0
+.rb,0.0
+.pdf,0.0
+.pem,0.0
+.m4v,0.0
+.h,0.0
+.ico,0.0
+.html,0.0
+.flac,0.0
+.dcm,0.0
+.dll,0.0
+.doc,0.0
+.xcf,0.0
+.whl,0.0
+.webp,0.0
+.wav,0.0
+.tp,0.0
+.tif,0.0
+.sqlite,0.0
+.so,0.0
+.rtf,0.0
+.r,0.0
+.pyx,0.0
+.pyc,0.0
+.pxi,0.0
+.pxd,0.0
+.psd,0.0
+.pkl,0.0
+.pickle,0.0
+.otf,0.0
+.ogg,0.0
+.mpg,0.0
+.mp4,0.0
+.mp3,0.0
+.mkv,0.0
+.mid,0.0
+.m4a,0.0
+.ipynb,0.0
+.flv,0.0
+.wasm,0.0
+.webm,0.0
+.mov,0.0
+.zip,0.0
+.xz,0.0

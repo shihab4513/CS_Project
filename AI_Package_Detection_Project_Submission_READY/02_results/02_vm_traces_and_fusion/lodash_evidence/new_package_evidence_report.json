@@ -1,0 +1,63 @@
+{
+  "scope": "New-package evidence fusion. No package script, dependency, or source code was executed by this program.",
+  "static_source_scan": {
+    "scan_scope": "Read-only source inspection. No code, package script, or dependency was executed.",
+    "source_directory": "F:\\Computer Security\\Project run code\\VM\\trace_exports\\package_sources\\lodash",
+    "files_seen": 1054,
+    "text_files_scanned": 1049,
+    "files_checked_for_risk_signals": 1049,
+    "nonproduction_files_excluded_from_risk_scoring": 0,
+    "total_lines_scanned": 45117,
+    "total_bytes_seen": 1412415,
+    "static_source_risk_score": 0.22,
+    "findings": [
+      {
+        "signal": "network_access",
+        "match_count": 204,
+        "files": [
+          "assign.js",
+          "bindKey.js",
+          "camelCase.js"
+        ],
+        "explanation": "Network access indicator found."
+      },
+      {
+        "signal": "obfuscation",
+        "match_count": 2,
+        "files": [
+          "keyBy.js",
+          "lodash.js"
+        ],
+        "explanation": "Potential obfuscation or dynamic code-evaluation indicator found."
+      }
+    ],
+    "limitation": "This lightweight scanner is not the paper's 140-feature extractor and its score must not be compared directly with the trained paper-dataset model probability."
+  },
+  "package": {
+    "package_name": "lodash-4.17.21",
+    "ecosystem": "NPM",
+    "static_malicious_probability": 0.22,
+    "static_label": "not automatically suspicious",
+    "reference_label": null,
+    "model_name": "Read-only rule-based source scanner (not the paper-dataset ML model)",
+    "evidence_type": "heuristic_source_score"
+  },
+  "static_agent": {
+    "agent": "Static Analysis Agent",
+    "risk_score": 0.22,
+    "evidence_type": "heuristic_source_score",
+    "finding": "The read-only source scanner assigned a heuristic risk score of 22.00% to lodash-4.17.21. This is not a calibrated malicious probability."
+  },
+  "behavior_agent": {
+    "agent": "Behavior Analysis Agent",
+    "risk_score": 0.08,
+    "finding": "No configured high-risk behavior was recorded in this imported trace."
+  },
+  "decision_agent": {
+    "agent": "Decision Agent",
+    "fused_risk_score": 0.15,
+    "decision": "record_multimodal_low_risk",
+    "reason": "Both available modalities produce a low combined score; record evidence and monitor limitations.",
+    "policy": "Evidence-aware triage: queue uncertain static cases, review modality disagreement, and preserve incomplete-evidence limits."
+  }
+}

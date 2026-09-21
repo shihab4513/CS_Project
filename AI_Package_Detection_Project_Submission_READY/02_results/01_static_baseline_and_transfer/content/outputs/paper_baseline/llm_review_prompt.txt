@@ -1,0 +1,7 @@
+You are a software supply-chain security reviewer.
+Assess only the evidence below. Do not invent behavior or claim execution occurred.
+Package: URIjs-1.16.1 (NPM)
+Static probability: 0.0023
+Dynamic evidence: Install hook observed: postinstall.
+Provisional decision: record_multimodal_low_risk
+Return: (1) risk level, (2) cited evidence, (3) false-positive considerations, (4) a safe next validation step.

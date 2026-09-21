@@ -1,0 +1,64 @@
+{
+  "scope": "Local LLM review of an already-created evidence report. The LLM received no package source code and did not install, download, or execute a package.",
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "bounded_evidence": {
+    "package": {
+      "package_name": "lodash-4.17.21",
+      "ecosystem": "NPM",
+      "static_malicious_probability": 0.22,
+      "static_label": "not automatically suspicious",
+      "reference_label": null,
+      "model_name": "Read-only rule-based source scanner (not the paper-dataset ML model)",
+      "evidence_type": "heuristic_source_score"
+    },
+    "source_scan": {
+      "heuristic_risk_score": 0.22,
+      "findings": [
+        {
+          "signal": "network_access",
+          "match_count": 204,
+          "example_files": [
+            "assign.js",
+            "bindKey.js",
+            "camelCase.js"
+          ],
+          "explanation": "Network access indicator found."
+        },
+        {
+          "signal": "obfuscation",
+          "match_count": 2,
+          "example_files": [
+            "keyBy.js",
+            "lodash.js"
+          ],
+          "explanation": "Potential obfuscation or dynamic code-evaluation indicator found."
+        }
+      ],
+      "limitation": "This lightweight scanner is not the paper's 140-feature extractor and its score must not be compared directly with the trained paper-dataset model probability."
+    },
+    "dynamic_evidence": {
+      "risk_score": 0.08,
+      "finding": "No configured high-risk behavior was recorded in this imported trace."
+    },
+    "triage_policy": {
+      "agent": "Decision Agent",
+      "fused_risk_score": 0.15,
+      "decision": "record_multimodal_low_risk",
+      "reason": "Both available modalities produce a low combined score; record evidence and monitor limitations.",
+      "policy": "Evidence-aware triage: queue uncertain static cases, review modality disagreement, and preserve incomplete-evidence limits."
+    },
+    "scope": "New-package evidence fusion. No package script, dependency, or source code was executed by this program."
+  },
+  "structured_review": {
+    "risk_level": "medium",
+    "cited_evidence": [
+      "network_access",
+      "obfuscation"
+    ],
+    "false_positive_considerations": [],
+    "safe_next_step": "Review the findings and consider additional analysis for potential vulnerabilities.",
+    "limitations": []
+  },
+  "raw_model_response": "```json\n{\n  \"risk_level\": \"medium\",\n  \"cited_evidence\": [\"network_access\", \"obfuscation\"],\n  \"false_positive_considerations\": [],\n  \"safe_next_step\": \"Review the findings and consider additional analysis for potential vulnerabilities.\",\n  \"limitations\": []\n}\n```",
+  "limitation": "The LLM output is reviewer assistance, not a ground-truth label or a replacement for sandbox isolation and human review."
+}
